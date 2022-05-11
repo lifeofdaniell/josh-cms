@@ -4,52 +4,53 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Name",
       "required": true
     },
-    "Year_Created": {
+    "year_created": {
       "type": "string"
     },
-    "Project_Type": {
+    "project_type": {
       "type": "string"
     },
-    "Contributors_Owners": {
+    "contributors_owners": {
       "type": "string"
     },
-    "First_Project_Text": {
+    "first_project_text": {
       "type": "text"
     },
-    "First_Project_Subtext": {
+    "first_project_subtext": {
       "type": "text"
     },
-    "Second_Project_Text": {
+    "second_project_text": {
       "type": "text"
     },
-    "Second_Project_Subtext": {
+    "second_project_subtext": {
       "type": "text"
     },
-    "Project_Image": {
+    "project_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
