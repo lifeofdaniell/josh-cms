@@ -11,9 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Date": {
-      "type": "date",
-      "default": "2021-01-01"
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Year_Created": {
+      "type": "string"
     },
     "Project_Type": {
       "type": "string"
@@ -32,13 +40,6 @@
     },
     "Second_Project_Subtext": {
       "type": "text"
-    },
-    "Project_Name": {
-      "type": "string"
-    },
-    "Slug": {
-      "type": "uid",
-      "targetField": "Project_Name"
     },
     "Project_Image": {
       "allowedTypes": [
