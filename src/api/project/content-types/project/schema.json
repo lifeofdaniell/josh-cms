@@ -26,7 +26,7 @@
     "project_type": {
       "type": "string"
     },
-    "contributors_owners": {
+    "contributors": {
       "type": "string"
     },
     "first_project_text": {
@@ -53,14 +53,18 @@
       ]
     },
     "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "owners": {
+      "type": "string"
     }
   }
 }
