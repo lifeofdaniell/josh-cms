@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fun_projects",
+  "info": {
+    "singularName": "fun-project",
+    "pluralName": "fun-projects",
+    "displayName": "Fun Projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "cover_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
