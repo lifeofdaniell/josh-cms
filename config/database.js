@@ -1,13 +1,15 @@
-// module.exports = ({ env }) => ({
-//   connection: {
-//     client: 'postgres',
-//     connection: {
-//       host: env('PGHOST', '127.0.0.1'),
-//       port: env.int('PGPORT', 5931),
-//       database: env('PGDATABASE', 'josh-cms'),
-//       user: env('PGUSER', 'root'),
-//       password: env('PGPASSWORD', 'deji'),
-//       ssl: env.bool(true),
-//     },
-//   },
-// });
+module.exports = ({ env }) => ({
+  connection: {
+    client: "mysql",
+    connection: {
+      host: env("DATABASE_HOST", "127.0.0.1"),
+      port: env.int("DATABASE_PORT", 3306),
+      database: env("DATABASE_NAME", "josh-cms"),
+      user: env("DATABASE_USERNAME", "root"),
+      password: env("DATABASE_PASSWORD", "deji"),
+      ssl: env.bool("DATABASE_SSL", false),
+    },
+  },
+  acquireConnectionTimeout: 600000,
+
+});
